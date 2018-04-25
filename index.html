@@ -30,7 +30,25 @@
   <meta name="twitter:image" content="https://fthmb.tqn.com/RNWZVJd7-fqiKXU3iVrVuEjHNKE=/960x0/filters:no_upscale()/-night-shot-of-downtown--orlando--723523079-598b826baad52b00115522ce.jpg"> 
   <meta name="twitter:card" content="summary_large_image">
   
-  <!-- TODO: insert your personal Font Awesome CDN link here -->
+  <!-- twitter widget js -->
+  <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  
+  <!-- Insert Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <!-- Inserted site fonts -->
@@ -55,8 +73,10 @@
   <footer>
    <a href= "https://www.facebook.com"> <img src="images/facebook.png" alt="Facebook logo">
     </a>
-    <a href= "https://www.twitter.com"><img src="images/" alt="twitter share">
-    </a>
+    <a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=wow">
+Tweet</a>
+
     
     </footer>
 
