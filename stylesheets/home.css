@@ -1,0 +1,82 @@
+.flex-container {
+  display: flex;
+  background-image: url(https://i1.wp.com/www.theprivatetravelcompany.co.uk/wp-content/uploads/2017/12/pigeon-point-tobago.jpg?resize=1000%2C350);
+  padding: 30px;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: bisque;
+  font: cursive;
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px darkblue;
+  margin: inherit;
+  font-family: 'Didact Gothic', sans-serif;
+  letter-spacing: 2px;
+}
+
+ body {
+   background-color: darkturquoise;
+   
+}
+
+.pquote {
+  text-align: left;
+  color: floralwhite;
+  padding: 15px;
+  font-family: 'Advent Pro', sans-serif;
+  letter-spacing: 1px;
+}
+
+#bodytext {
+  color: bisque;
+  background-color: #000033;
+  box-shadow: 10px 10px 5px #339999;
+  display: flex;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: 'Didact Gothic', sans-serif;
+  
+}
+
+.topnav {
+  display: flex;
+  overflow: hidden;
+  background-color: #000033;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.topnav a {
+  display: flex;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #009999;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #006666;
+  color: white;
+}
+
+blockquote {
+  font-size: 2rem;
+  color: beige;
+  text-shadow: 3px 3px 3px darkblue;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: sandybrown;
+  width: auto;
+  height: auto;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}

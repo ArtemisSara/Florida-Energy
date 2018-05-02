@@ -6,7 +6,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117493974-1"></script>
   <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,7 +17,7 @@
   </script>
 
   <title>FESC</title>
-<!-- Insert Facebook tags -->
+  <!-- Insert Facebook tags -->
   <meta property="og:title" content="Florida Energy Systems Consortium">
   <meta property="og:description" content="Information for a more sustainable Florida">
   <meta property="og:image" content="https://fthmb.tqn.com/RNWZVJd7-fqiKXU3iVrVuEjHNKE=/960x0/filters:no_upscale()/-night-shot-of-downtown--orlando--723523079-598b826baad52b00115522ce.jpg">
@@ -27,13 +27,13 @@
   <meta property="og:type" content="website">
   
 
-<!-- Insert Twitter Tags -->
+  <!-- Insert Twitter Tags -->
   <meta name="twitter:title" content="Florieda Energy Systems Consortium">
   <meta name="twitter:description" content="Information for a more sustainable Florida">
   <meta name="twitter:image" content="https://fthmb.tqn.com/RNWZVJd7-fqiKXU3iVrVuEjHNKE=/960x0/filters:no_upscale()/-night-shot-of-downtown--orlando--723523079-598b826baad52b00115522ce.jpg"> 
   <meta name="twitter:card" content="summary_large_image">
   
-<!-- twitter widget js -->
+  <!-- twitter widget js -->
   <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
     t = window.twttr || {};
@@ -51,44 +51,95 @@
   return t;
 }(document, "script", "twitter-wjs"));</script>
   
-<!-- Insert Font Awesome -->
+  <!-- Insert Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-<!-- Insert Fonts -->  
+  <!-- Inserted site fonts -->
   <link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet"> 
   
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"> 
   
-  
   <!-- Insert CSS -->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="stylesheets/home.css">
 </head>
+  <body>
 
-<body>
-  
   <header> 
-    <!-- Main Nav -->
     <h1>Florida Energy Systems Consortium</h1>
-    <nav class="main-nav">
-       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="outreach.html">Outreach</a></li>
-        <li><a href="facilities.html">Facilities</a></li>
-       </ul>
-    </nav>
-    </header>
-  <p>The links below provide facilities descriptions of FESC universities and our partner institutions. Information contained here may, with the institution’s permission, be suitable for inclusion in collaborative grant proposals.</p>
+   
+    <!-- Main Nav this is test code for using an animated hamburger menu, not sure if this will be final
+    <style>
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
 
-  <!-- Footer Info -->
-  <hr>
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+</style>
+    </header>
+<body>
+
+<p>Click on the Menu Icon to transform it to "X":</p>
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+-->
+    
+   <!-- Main Nav -->
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a class="active" href="facilities.html">Facilities</a>
+  <a href="outreach.html">Outreach</a>
+</div>
+    </header>
+
+
+     <p>Info about facilities that we partner with, as well as facilities to rent</p>
+      
+  <!-- Add CSS for pullquote below -->
+  
+  <aside class="pquote">
+    <blockquote>
+        <p>charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state</p>
+    </blockquote>
+</aside>
+  
+<hr>
   <footer>
-     <address>272 Grinter Hall <br>P.O. Box 115500 <br>Gainesville, FL 32611-5500</address>
-  <a class="twitter-share-button"
+    <address>272 Grinter Hall <br>P.O. Box 115500 <br>Gainesville, FL 32611-5500</address>
+  
+    <a class="twitter-share-button"
   href="https://twitter.com/intent/tweet?text=wow">
-Tweet</a>
+      Tweet</a>
 
     <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fartemissara.github.io%2FFlorida-Energy%2F&layout=button&size=small&mobile_iframe=true&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
     
     </footer>
-
   </body>
+</html>
