@@ -34,7 +34,7 @@ body {
   display: flex;
   padding-left: 25px;
   padding-right: 25px;
-  font-family: 'Didact Gothic', sans-serif;
+  font: 100% Didact Gothic, sans-serif;
   margin-top: 10px; }
 
 .topnav {
