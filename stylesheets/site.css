@@ -11,8 +11,9 @@
   font-size: 3rem;
   text-shadow: 1px 1px 1px darkblue;
   margin: inherit;
-  font-family: 'Didact Gothic', sans-serif;
-  letter-spacing: 2px; }
+  font-family: "Didact Gothic", sans-serif;
+  letter-spacing: 2px;
+  width: auto; }
 
 body {
   background-color: darkturquoise; }
@@ -22,10 +23,11 @@ body {
   color: floralwhite;
   padding: 15px;
   font-family: 'Advent Pro', sans-serif;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  float: left; }
 
 #bodytext {
-  color: bisque;
+  color: white;
   background-color: #000033;
   -webkit-box-shadow: 10px 10px 5px #339999;
           box-shadow: 10px 10px 5px #339999;
@@ -34,7 +36,8 @@ body {
   display: flex;
   padding-left: 25px;
   padding-right: 25px;
-  font: 100% Didact Gothic, sans-serif;
+  font: 100%;
+  font-family: "Didact Gothic", sans-serif;
   margin-top: 10px; }
 
 .topnav {
@@ -70,13 +73,36 @@ blockquote {
   text-shadow: 3px 3px 3px darkblue;
   text-align: center; }
 
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+  vertical-align: middle;
+  overflow: hidden; }
+
+h2 {
+  float: left;
+  font-family: "Advent Pro", sans-serif; }
+
 footer {
   text-align: center;
+  font-family: "Didact Gothic", sans-serif;
   background-color: sandybrown;
   width: auto;
-  height: auto;
+  height: 100%;
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 100px; }
+
+#info {
+  font-family: "Didact Gothic", sans-serif;
+  padding-top: 15px; }
 
 /*# sourceMappingURL=site.css.map */

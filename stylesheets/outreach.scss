@@ -1,5 +1,5 @@
-$font-stack: Didact Gothic, sans-serif;
-$primary-color: bisque;
+$font-stack: "Didact Gothic", sans-serif;
+$primary-color: white;
 
 
 .flex-container {
@@ -13,8 +13,9 @@ $primary-color: bisque;
   font-size: 3rem;
   text-shadow: 1px 1px 1px darkblue;
   margin: inherit;
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: $font-stack; 
   letter-spacing: 2px;
+  width: auto;
   
 }
 
@@ -32,13 +33,14 @@ $primary-color: bisque;
 }
 
 #bodytext {
-  color: bisque;
+  color: $primary-color;
   background-color: #000033;
   box-shadow: 10px 10px 5px #339999;
   display: flex;
   padding-left: 25px;
   padding-right: 25px;
-  font-family: 'Didact Gothic', sans-serif;
+  font: 100%;
+  font-family: $font-stack;
   margin-top: 10px;
   
 }
@@ -77,12 +79,35 @@ blockquote {
   text-align: center;
 }
 
+// code for wave found here https://stackoverflow.com/questions/17202548/wavy-shape-with-css
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
 footer {
   text-align: center;
+  font-family: $font-stack;
   background-color: sandybrown;
   width: auto;
-  height: auto;
+  height: 100%; 
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 100px;
+}
+
+#info {
+  font-family: $font-stack;
+  padding-top: 15px;
+  
 }
