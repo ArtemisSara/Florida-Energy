@@ -1,4 +1,4 @@
-.flex-container {
+.page-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,6 +21,7 @@ body {
 .pquote {
   text-align: left;
   color: floralwhite;
+  position: relative;
   padding: 15px;
   font-family: 'Advent Pro', sans-serif;
   letter-spacing: 1px;
@@ -89,12 +90,17 @@ blockquote {
 
 #chart_div {
   text-shadow: 3px 3px 3px lightblue;
-  display: inline-block;
+  float: inherit;
+  padding: 10px; }
+
+#table_div {
+  ext-shadow: 3px 3px 3px lightblue;
+  float: inherit;
   padding: 10px; }
 
 svg {
   display: inline-block;
-  position: absolute;
+  position: inherit;
   top: 0;
   left: 0; }
 
@@ -102,8 +108,10 @@ svg {
   display: inline-block;
   position: relative;
   width: 100%;
-  padding-bottom: 50%;
   vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 10px; }
 
 h2 {

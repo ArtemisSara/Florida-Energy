@@ -67,55 +67,63 @@
 
  <script src="js/home.js">
   </script>
+  
+  <script type="text/javascript" src="js/home.js"></script>
 </head>
-  <body>
-
+  
+  
+  
+<body>
+<div class="container">  
 <header> 
-    <h1 class="flex-container">Florida Energy Systems Consortium</h1>
+    <h1 class="page-title">Florida Energy Systems Consortium</h1>
   
 <!-- Main Nav -->
-  <div class="topnav">
+<div class="topnav">
     <a class="active" href="index.html">Home</a>
     <a href="facilities.html">Facilities</a>
     <a href="outreach.html">Outreach</a>
-  
   </div>
 </header>
-    
+  
+  
+<div class="container">
     <aside class="pquote">
       <blockquote>
         <p>"[FESC is] charged to perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state..."</p>
     </blockquote>
     </aside>
+  
+  <!-- Div for Wave -->
+  <div class="container">
+    <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+    <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:cyan;"></path>
+    </svg>
+    </div>
+</div>
     
 <div id="bodytext">
      <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
+</div>
+    
+<div class="bodytext"> 
+    <p>Following are charts representing how productive and effective renewable energy can be, as well as energy saved in Billions of BTUs.
+    </p>
+</div>
   
-
-    </div>
-    
-    <div class="bodytext"> 
-    <p>Following are charts representing how productive and effective renewable energy can be.
-  </p>
-    </div>
-    
-    
-<!-- Div for Column Chart -->
-   
+  
+<!-- Div for Combo Chart -->
 <div id="chart_div" style="width: 600px; height: 400px;"></div>
 
-    
-<!-- Div for Wave --> 
-  <div class="container">
-  <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
-  <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:cyan;"></path>
-  </svg>
-</div>
-
+  
+<!-- Div for Table Chart -->
+<div id="table_div" style="width: 600px; height: 400px;"></div>
+  
+  
   
 <hr>
   <footer>
-   <address>272 Grinter Hall <br>P.O. Box 115500 <br>Gainesville, FL 32611-5500</address>
+    <address>272 Grinter Hall <br>P.O. Box 115500 <br>Gainesville, FL 32611-5500</address>
   
     <a class="twitter-share-button"
   href="https://twitter.com/intent/tweet?text=wow">
@@ -129,5 +137,6 @@
       <a href="https://en.wikipedia.org/wiki/Renewable_energy">Resources</a>
     </div>
     </footer>
+  </div>
   </body>
 </html>
