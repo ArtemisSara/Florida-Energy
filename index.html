@@ -64,18 +64,21 @@
   <link rel="stylesheet" href="stylesheets/site.css">
   
   <script src="https://www.gstatic.com/charts/loader.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  
 
- <script src="js/home.js">
-  </script>
   
   <script type="text/javascript" src="js/home.js"></script>
 </head>
   
 <body>
+<div id="app">
 <div class="container">
 
 <header> 
-    <h1 class="page-title">Florida Energy Systems Consortium</h1>
+    <h1 class="page-title">Florida Energy Systems Consortium {{ message }}
+    </h1>
   
 <!-- Main Nav -->
 <div class="topnav">
@@ -126,7 +129,7 @@
 <div id="table_div" style="width: 600px; height: 400px;"></div>
   
   
-  
+  </div>
 <hr>
   <footer>
     <address>272 Grinter Hall <br>P.O. Box 115500 <br>Gainesville, FL 32611-5500</address>
@@ -142,6 +145,8 @@
       <a href="outreach.html">Outreach</a>
       <a href="https://en.wikipedia.org/wiki/Renewable_energy">Resources</a>
     </div>
+     <script src="js/home.js">
+  </script>
     </footer>
     </div>
     </div>

@@ -142,3 +142,10 @@ google.charts.setOnLoadCallback(drawTable);
         table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
       }
 
+  
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
