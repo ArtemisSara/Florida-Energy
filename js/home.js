@@ -66,7 +66,6 @@ google.charts.load('current', {'packages':['corechart', 'bar']});
     chart.draw(data, options);
   }
 
-
 // Table Chart JS
 google.charts.load('current', {'packages':['table']});
 google.charts.setOnLoadCallback(drawTable);
@@ -142,10 +141,16 @@ google.charts.setOnLoadCallback(drawTable);
         table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
       }
 
-  
+
+Vue.component('app-header', {
+  props: ['text'],
+  template: '<header><h1 class="page-title">{{ text }}</h1><div class="topnav"><a class="active" href="index.html">Home</a><a href="facilities.html">Facilities</a><a href="outreach.html">Outreach</a></div></header>'
+})
+
 var app = new Vue({
   el: '#app',
   data: {
     message: 'Hello Vue!'
   }
 })
+
