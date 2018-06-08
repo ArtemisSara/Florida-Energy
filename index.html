@@ -38,7 +38,9 @@
   <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
     t = window.twttr || {};
-  if (d.getElementById(id)) return t;
+  if (d.getElementById(id)) 
+  return ( t );
+      
   js = d.createElement(s);
   js.id = id;
   js.src = "https://platform.twitter.com/widgets.js";
@@ -49,7 +51,7 @@
     t._e.push(f);
   };
 
-  return t;
+  return (t);
 }(document, "script", "twitter-wjs"));</script>
   
   <!-- Insert Font Awesome -->
@@ -63,63 +65,36 @@
   <!-- Insert CSS -->
   <link rel="stylesheet" href="stylesheets/site.css">
   
+  <!-- Insert Vue and JS -->
   <script src="https://www.gstatic.com/charts/loader.js"></script>
-  
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  
   <script type="text/javascript" src="js/home.js"></script>
-  
-   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-    <script>
+  <script>
 
       google.charts.load('current', {'packages':['corechart']});
-
       google.charts.setOnLoadCallback(getData);
 
+    
+  function drawBasic(freshData) {
+   console.log("freshData", freshData)
+    freshData.unshift(["Year", "Billion BTUs"])
 
+  var data = google.visualization.arrayToDataTable(freshData);
+  var options = {
+    title: 'Energy Production in Florida',
+    chartArea: {width: '50%'},
+    hAxis: {
+    title: 'BTUs',
+    minValue: 0
 
-      function drawBasic(freshData) {
+    }
+   };
 
-        console.log("freshData", freshData)
+  var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
 
-        freshData.unshift(["Year", "Billion BTUs"])
-
-
-
-        var data = google.visualization.arrayToDataTable(freshData);
-
-
-
-        var options = {
-
-          title: 'Energy Production in Florida',
-
-          chartArea: {width: '50%'},
-
-          hAxis: {
-
-            title: 'BTUs',
-
-            minValue: 0
-
-          }
-
-        };
-
-
-
-        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-
-
-
-        chart.draw(data, options);
+  chart.draw(data, options);
 
       }
-
-
-
-
 
       function getData(){
 
@@ -140,26 +115,17 @@
         request.onload = function(){
 
           let theActualData = JSON.parse(request.response).series[0].data
-
-
-
           drawBasic(theActualData)
-
         }
 
         // Callback for when there's an error
-
         request.error = function(err){
-
           console.log("error is: ", err)
-
         }
-
         // Send the request to the specified URL
-
         request.send()
-
       }
+    
   </script>
 </head>
   
@@ -170,7 +136,7 @@
 <app-header text="Florida Energy Consortium"></app-header>
   
   
-<div class="container">
+  <div class="container">
   <div id="wave-container">
   <div id="wave">
   </div>
@@ -189,8 +155,6 @@
     </svg>
     </div>
 -->
-  
-
     
 <div id="bodytext">
      <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
@@ -223,10 +187,10 @@
       <a href="outreach.html">Outreach</a>
       <a href="https://en.wikipedia.org/wiki/Renewable_energy">Resources</a>
     </div>
-     <script src="js/home.js">
-  </script>
     </footer>
     </div>
     </div>
+  <script src="js/home.js">
+  </script>
   </body>
 </html>
